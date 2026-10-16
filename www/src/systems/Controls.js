@@ -31,6 +31,9 @@ export class Controls {
     this.coyoteTimer = 0;
     this.COYOTE_MS = 100;
 
+    // Virtual "jump held" window (mobile tap support)
+    this._jumpHeldTimer = 0;
+
     this._wireKeyboard();
   }
 
@@ -130,12 +133,21 @@ export class Controls {
     this._pausePressed = false;
     this.restart = this._restartPressed;
     this._restartPressed = false;
+
+    // Decay the "virtual jump held" window — when the user taps JUMP,
+    // we treat it as HELD for ~200ms so variable-jump-cut doesn't fire
+    // immediately. This gives full-jump height on a quick tap (essential
+    // for mobile touch controls where you can't hold precisely).
+    if (this._jumpHeldTimer > 0) this._jumpHeldTimer -= dt;
   }
 
   consumeJumpRequest() {
     if (this.jumpBufferTimer > 0 && this.coyoteTimer > 0) {
       this.jumpBufferTimer = 0;
       this.coyoteTimer = 0;
+      // Start the "virtual held" window so the variable jump cut doesn't
+      // truncate a tap-triggered jump immediately.
+      this._jumpHeldTimer = 200;
       return true;
     }
     return false;
@@ -151,7 +163,7 @@ export class Controls {
       this.cursors.up.isDown ||
       this.keys.W.isDown ||
       this.keys.SPACE.isDown ||
-      this._jumpPressed
+      this._jumpHeldTimer > 0
     );
   }
 }

@@ -13,14 +13,15 @@ export class Hero extends Phaser.Physics.Arcade.Sprite {
 
     this.audio = scene.audio || new AudioSystem();
 
-    // Physics defaults (from spec)
-    this.WALK_SPEED = 220;
-    this.SPRINT_SPEED = 340;
-    this.JUMP_VELOCITY = -470;
-    this.ACCEL_GROUND = 2400;
-    this.ACCEL_AIR = 1400;
-    this.FRICTION_GROUND = 2200;
-    this.MAX_FALL_SPEED = 900;
+    // Physics defaults — tuned for ~5-tile vertical jump (enough to reach
+    // floating platforms that are 4-5 tiles above ground).
+    this.WALK_SPEED = 240;
+    this.SPRINT_SPEED = 360;
+    this.JUMP_VELOCITY = -620;  // was -470 → max jump ~175px (5.5 tiles)
+    this.ACCEL_GROUND = 2600;
+    this.ACCEL_AIR = 1600;
+    this.FRICTION_GROUND = 2400;
+    this.MAX_FALL_SPEED = 1000;
 
     // Visual sizing — original frames are large (200+ px).
     // We scale down to ~64px tall to look right at our 1280x720 viewport.
@@ -174,12 +175,9 @@ export class Hero extends Phaser.Physics.Arcade.Sprite {
       this.audio.jump();
       this.scene.emitDust?.(this.x, this.y);
     }
-    // Variable jump cut
-    if (this._variableJumpActive && !controls.jumpHeld && this.body.velocity.y < 0) {
-      this.body.setVelocityY(this.body.velocity.y * 0.5);
-      this._variableJumpActive = false;
-    }
-    if (this.body.velocity.y >= 0) this._variableJumpActive = false;
+    // NOTE: variable jump cut is DISABLED for mobile UX. A tap always
+    // produces a full-height jump. (Holding longer doesn't increase height.)
+    this._variableJumpActive = false;
 
     // ===== Landing detection =====
     if (isGrounded && !this._wasGrounded) {
@@ -272,7 +270,8 @@ export class Hero extends Phaser.Physics.Arcade.Sprite {
   }
 
   bounceOnEnemy() {
-    this.body.setVelocityY(this.JUMP_VELOCITY * 0.8);
+    // Bounce higher than a normal jump so chaining feels good
+    this.body.setVelocityY(this.JUMP_VELOCITY * 0.9);
     this._variableJumpActive = true;
     this.audio.enemyStomp();
   }

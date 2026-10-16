@@ -8,7 +8,9 @@ import { UIScene } from "./scenes/UIScene.js";
 import { Storage } from "./systems/Storage.js";
 
 // Logical resolution the game is designed for.
-export const GAME_WIDTH = 1280;
+// Use a wider aspect ratio (16:9 → 19.5:9 stretched via ENVELOP) so it
+// fills modern phones without black bars.
+export const GAME_WIDTH = 1600;
 export const GAME_HEIGHT = 720;
 
 // Detect mobile/touch
@@ -32,8 +34,13 @@ const config = {
   roundPixels: true,
   backgroundColor: "#0a0a14",
   scale: {
-    mode: Phaser.Scale.ScaleModes.FIT,
+    // ENVELOP: scale to FILL the screen (no black bars).
+    // The game content will be slightly cropped on ultra-wide phones,
+    // but visually fills the entire display — much better UX than letterboxing.
+    mode: Phaser.Scale.ScaleModes.ENVELOP,
     autoCenter: Phaser.Scale.CENTER_BOTH,
+    width: GAME_WIDTH,
+    height: GAME_HEIGHT,
   },
   render: {
     antialias: false,
