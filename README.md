@@ -8,13 +8,24 @@
 
 ## 📲 دانلود مستقیم APK
 
-[![Download APK](https://img.shields.io/badge/Download-APK-21MB-success?style=for-the-badge&logo=android)](https://github.com/aria0939/shadow-runner-pixel-adventure/releases/download/v1.0/shadow-runner-v1.0-debug.apk)
+### 🆕 نسخهٔ v1.1 (آخرین تغییرات: fullscreen + پرش بهتر)
 
-- **فایل:** `shadow-runner-v1.0-debug.apk` (۲۱ مگابایت)
+[![Download v1.1 APK](https://img.shields.io/badge/Download-v1.1_APK-21MB-success?style=for-the-badge&logo=android)](https://github.com/aria0939/shadow-runner-pixel-adventure/releases/download/v1.1/shadow-runner-v1.1-debug.apk)
+
+### نسخهٔ v1.0 (اولین release)
+
+[![Download v1.0 APK](https://img.shields.io/badge/Download-v1.0_APK-21MB-blue?style=for-the-badge&logo=android)](https://github.com/aria0939/shadow-runner-pixel-adventure/releases/download/v1.0/shadow-runner-v1.0-debug.apk)
+
 - **بسته:** `com.aria0939.shadowrunner`
 - **حداقل نسخهٔ Android:** ۵.۰ (API 21)
 - **معماری:** arm64-v8a / armeabi-v7a / x86 / x86_64 (یونیورسال)
 - **نوع امضا:** Debug (برای تست)
+
+### تغییرات v1.1
+- ✅ **تمام‌صفحه:** حالت Scale به `ENVELOP` تغییر کرد، دیگر نوار مشکی کنار صفحه نیست.
+- ✅ **پرش بهتر:** ارتفاع پرش از ۳ تایل به ۵.۳ تایل افزایش یافت.
+- ✅ **پرش با tap:** یک TAP روی دکمه JUMP همیشه پرش کامل می‌دهد.
+- ✅ سطوح دوباره طراحی شدند تا سکوها قابل دسترس باشند.
 
 ### نصب روی Android
 1. فایل APK را دانلود کنید.
