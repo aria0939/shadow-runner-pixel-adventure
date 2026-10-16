@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Capacitor / Android build artifacts
+android/
+android-app/
+*.apk
+*.keystore
+local.properties
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# Editor
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+tmp/

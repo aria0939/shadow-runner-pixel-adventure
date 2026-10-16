@@ -1,0 +1,24 @@
+{
+  "appId": "com.aria0939.shadowrunner",
+  "appName": "Shadow Runner",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "hostname": "shadow.runner.local"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": true,
+    "captureInput": true,
+    "backgroundColor": "#0a0a14"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#0a0a14",
+      "showSpinner": false,
+      "androidScale": "CENTER_CROP"
+    }
+  }
+}

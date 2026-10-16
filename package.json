@@ -1,0 +1,20 @@
+{
+  "name": "shadow-runner-android",
+  "version": "1.0.0",
+  "description": "Shadow Runner: Pixel Adventure — HTML5 platformer packaged as Android APK via Capacitor.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 7777",
+    "build:android": "bash scripts/build_android.sh",
+    "sync:android": "bash scripts/sync_android.sh",
+    "open:android": "bash scripts/open_android.sh"
+  },
+  "keywords": ["phaser", "platformer", "android", "capacitor", "game"],
+  "author": "aria0939",
+  "license": "MIT",
+  "devDependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/android": "^6.0.0"
+  }
+}

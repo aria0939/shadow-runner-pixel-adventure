@@ -1,0 +1,327 @@
+{
+  "frames": {
+    "enemy-walker-01": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-walker-02": {
+      "frame": {
+        "x": 256,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-walker-03": {
+      "frame": {
+        "x": 512,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-walker-04": {
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shell-crawler-01": {
+      "frame": {
+        "x": 0,
+        "y": 320,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shell-crawler-02": {
+      "frame": {
+        "x": 256,
+        "y": 320,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shell-crawler-03": {
+      "frame": {
+        "x": 512,
+        "y": 320,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shell-crawler-04": {
+      "frame": {
+        "x": 768,
+        "y": 320,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-flying-shadow-01": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-flying-shadow-02": {
+      "frame": {
+        "x": 256,
+        "y": 640,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-flying-shadow-03": {
+      "frame": {
+        "x": 512,
+        "y": 640,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-flying-shadow-04": {
+      "frame": {
+        "x": 768,
+        "y": 640,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shadow-hunter-01": {
+      "frame": {
+        "x": 0,
+        "y": 960,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shadow-hunter-02": {
+      "frame": {
+        "x": 256,
+        "y": 960,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shadow-hunter-03": {
+      "frame": {
+        "x": 512,
+        "y": 960,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    },
+    "enemy-shadow-hunter-04": {
+      "frame": {
+        "x": 768,
+        "y": 960,
+        "w": 256,
+        "h": 320
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 320
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 320
+      }
+    }
+  },
+  "meta": {
+    "image": "enemy-spritesheet.png"
+  }
+}
