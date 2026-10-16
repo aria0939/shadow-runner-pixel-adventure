@@ -1,13 +1,16 @@
 # Node
 node_modules/
 npm-debug.log*
+package-lock.json
 
-# Capacitor / Android build artifacts
+# Capacitor / Android build artifacts (but keep releases/)
 android/
-android-app/
-*.apk
 *.keystore
 local.properties
+
+# Build intermediate (committed APK lives in releases/)
+build/
+**/build/
 
 # OS junk
 .DS_Store
