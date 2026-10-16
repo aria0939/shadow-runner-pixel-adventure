@@ -3,8 +3,23 @@
 > یک بازی پلتفرمر HTML5 با موتور Phaser 3 — قابل اجرا در مرورگر و قابل بسته‌بندی به APK اندروید.
 
 <p align="center">
-  <img src="assets/icons/icon-192.png" width="96" height="96" alt="icon" />
+  <img src="www/assets/icons/icon-192.png" width="96" height="96" alt="icon" />
 </p>
+
+## 📲 دانلود مستقیم APK
+
+[![Download APK](https://img.shields.io/badge/Download-APK-21MB-success?style=for-the-badge&logo=android)](https://github.com/aria0939/shadow-runner-pixel-adventure/releases/download/v1.0/shadow-runner-v1.0-debug.apk)
+
+- **فایل:** `shadow-runner-v1.0-debug.apk` (۲۱ مگابایت)
+- **بسته:** `com.aria0939.shadowrunner`
+- **حداقل نسخهٔ Android:** ۵.۰ (API 21)
+- **معماری:** arm64-v8a / armeabi-v7a / x86 / x86_64 (یونیورسال)
+- **نوع امضا:** Debug (برای تست)
+
+### نصب روی Android
+1. فایل APK را دانلود کنید.
+2. در تنظیمات Android → **Privacy → Install unknown apps** → مرورگر یا فایل‌منیجر را فعال کنید.
+3. روی فایل APK بزنید و **Install** را انتخاب کنید.
 
 این پروژه شامل بازی کاملِ پلتفرمری به نام **Shadow Runner** است که با استفاده از Phaser 3 و HTML5 Canvas ساخته شده و با سیستم Capacitor به‌عنوان اپلیکیشن Android بسته‌بندی می‌شود. کاراکتر اصلی مردی با موی مشکی، ریش کوتاه، گوشواره و لباس راه‌راه است که در دنیایی پیکسلی با سکه‌ها، دشمنان و دروازه‌های خروج سفر می‌کند.
 
